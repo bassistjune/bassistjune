@@ -45,8 +45,8 @@
 .btn_top>a:hover:before {height: 2px; transition: all 0.3s ease;}
 .btn_top>a:hover:after {height: 2px; transition: all 0.3s ease;}
 
-.btn_top>a:before {content: ''; position: absolute; left: 10px; top: 50%; transform:rotate(-45deg) translateY(-50%); width: 25px; height: 2px; background: #fff;}
-.btn_top>a:after {content: ''; position: absolute; right: 10px;; top: 50%; transform: rotate(45deg) translateY(-50%); width: 25px; height: 2px; background: #fff;}
+.btn_top>a:before {content: ''; position: absolute; left: 21px; top: 50%; transform:rotate(-45deg) translateY(-50%); width: 12px; height: 2px; background: #fff;}
+.btn_top>a:after {content: ''; position: absolute; right: 21px; top: 50%; transform: rotate(45deg) translateY(-50%); width: 12px; height: 2px; background: #fff;}
 /* //탑버튼 */
 
 
@@ -68,7 +68,7 @@
 
 /* 헤더 GNB */
 #header .gnb_menu li {float: left; margin: 0 15px;}
-#header .gnb_menu li a {display: block; font-size: 18px; font-weight: 500; line-height: 50px; padding: 0 10px; transition: all 0.3s;}
+#header .gnb_menu li a {display: block; position: relative; font-size: 18px; font-weight: 500; line-height: 50px; padding: 0 10px; transition: all 0.3s;}
 #header .gnb_menu li a:before {content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; height: 2px; background: #f5c15d; display: block; transform: scale(0); transition: all 0.3s;}
 
 /* GNB li 온 */
@@ -105,6 +105,7 @@
 #header .mobile_menu_wrap .mobile_sns li:not(:first-child):before {content: ''; display: block; width: 1px; height: 40px; position: absolute; left: -4px; top: 50%; transform: translateY(-50%); background: #e6e8e9;}
 #header .mobile_menu_wrap .mobile_sns li a {display: block; padding: 20px 15px; }
 #header .mobile_menu_wrap .mobile_sns li a i {display: inline-block; vertical-align: middle; margin-right: 8px;}
+#header .header_inner .sns_wrap li a:hover i {color: #f5c15d;}
 /* //헤더 */
 
 
@@ -123,12 +124,14 @@
 .name_card .name_s:after {content: ''; position: absolute; display: block; width: 12px; height: 2px; background: #333; top: 22px; left: 2px;}
 /* //네임카드 */
 #container .intro {background: url(../images/background_img_02.jpeg)no-repeat center 70%; background-size: cover; padding-bottom: 160px; position: relative; z-index: -1;}
-#container .intro:before {content: ''; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: -1; background:rgb(255 255 255 / 16%);}
-#container .intro h2 {font-size: 120px; font-weight: 700; display: block; text-align: center; margin: 0 auto; line-height: 1;}
+/* #container .intro:before {content: ''; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: -1; background:rgb(255 255 255 / 16%);} */
+#container .intro .intro_wrap {margin: 0 auto; width: 80%; padding: 40px 0; background: rgba(255,255,255,0.4);}
+
+#container .intro h2 {font-size: 220px; font-weight: 700; display: block; text-align: center; margin: 0 auto; line-height: 1; font-family: 'Amatic SC';}
 #container .intro h3 {font-size: 41px; font-weight: 700; display: block; text-align: center; margin: 0 auto 40px; line-height: 1;}
 #container .intro .intro_text {text-align: center;}
 #container .intro .intro_text .sub_tit {font-size: 26px; line-height: 1.25; margin-top: 40px; font-weight: 500;}
-#container .intro .intro_text .intro_text {font-size: 21px; line-height: 1.5; font-weight: 400; padding-top: 40px; /* color: #fff; */}
+#container .intro .intro_text .main_text {font-size: 21px; line-height: 1.5; font-weight: 500; padding-top: 40px; /* color: #fff; */}
 
 .profile_txt {font-size: 18px; color: #f5c15d; vertical-align: middle; position: relative; padding: 24px 32px;/*  border: 1px solid #f5c15d; */}
 .profile_txt:after {content: ''; position: absolute; left: 1%; bottom: 0px; display: block; width: 100%; height: 2px; background:#f5c15d; transform: scale(0); transition: 0.3s;}
@@ -149,9 +152,10 @@
 #container .intro_slider_wrap .slide_content .slide_txt .date_num {display: block; font-size: 16px; color: #ccc; padding-bottom: 20px;}
 
 /* 인트로 슬라이드 페이지네이션 */
-#container .intro_slider_wrap .slider_tools {width: 83px; height: 110px; position: absolute; right: 140px; bottom: 8px;}
-#container .intro_slider_wrap .slider_tools .swiper-pagination {position: absolute; top: 0px; pointer-events: none; font-size: 18px; font-weight: 300;}
-#container .intro_slider_wrap .slider_tools .swiper_arrow {bottom: 0; filter: brightness(0); border: 1px solid #000; background-size: 22px auto; padding: 8px 15px;}
+#container .intro_slider_wrap .slider_tools {width: 107px; height: 110px; position: absolute; right: 140px; bottom: 8px;}
+#container .intro_slider_wrap .slider_tools .swiper-pagination {position: absolute; top: 0px; left: 25px; pointer-events: none; font-size: 18px; font-weight: 300;}
+#container .intro_slider_wrap .slider_tools .swiper_arrow {bottom: 0; filter: brightness(0); width: 44px; height: 44px; border: 1px solid #000; background-size: 7px auto; padding: 8px 15px;}
+/* #container .intro_slider_wrap .slider_tools .swiper_arrow.swiper-button-prev {right: 68px;} */
 
 /* //인트로 */
 

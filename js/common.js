@@ -83,14 +83,17 @@ $(function () {
 		//스크롤 메뉴 on기능
 		$contentWrap.each(function() {
 
+			var idx = $(this).index() - 5;
+			
 			if($(this).offset().top -5 <= $(window).scrollTop()) {
 
-				var idx = $(this).index() - 5;
-				
-				console.log(idx);
+				/* console.log(idx); */
 				$menu.removeClass('on');
 				$menu.eq(idx).addClass('on');
-			}
+			} else if($(window).scrollTop() < $contentWrap.eq(0).offset().top) {
+				$menu.removeClass('on');
+				$menu.eq(idx).removeClass('on');
+			} 
 		}); 
 
 		//탑 버튼 기능
@@ -146,15 +149,15 @@ $(function () {
 		e.stopImmediatePropagation();
 
 		if(!$('.detail .detail_list li a').is(e.target)) 
-		{ 
+		{
 			$('.detail .detail_list li').removeClass('on');
 			$('.detail_txt').slideUp();
 		}else if(!$('.link_notice').is(e.target)) {
 			$('.button_wrap .link_notice').hide();
-		}else if(!$('.mobile_menu_list li').is(e.target)) {
+		}else if(!$('.mobile_menu_list li').parent().find('.mobile_menu_wrap').hasClass('on').is(e.target)) {
 			$('.mobile_menu_wrap').removeClass('on');
 		}
-		/* 이것 수정요망	 */
+		/* 이것 수정요망*/
 	});
 
 
