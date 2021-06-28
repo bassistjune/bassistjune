@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* @font-face {
+    font-family: 'sw';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../font/Subway-Footlong.eot);
+    src: url(../font/Subway-Footlong.eot?#iefix) format('embedded-opentype'),
+        url(../font/Subway-Footlong.woff) format('woff'),
+        url(../font/Subway-Footlong.ttf) format('truetype');
+} */
+
+
+
+
+
+
+*, :before, :after {box-sizing: border-box;}
+
+/* rem단위사용시 root요소에 폰트지정 */
+/* html {font-size: 10px;} */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,address,code,em,img,strong,sub,sup,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figure,figcaption,footer,header,hgroup,menu,nav,section,main,audio,video {margin: 0; padding: 0; -webkit-tap-highlight-color: rgba(0,0,0,0.1);}
+
+/*html5추가 시멘틱엘리먼트를 익스하위버전에서 블럭으로 인식되도록함*/
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main {display: block}
+
+/* button태그에 손모양 커서 */
+button {cursor:pointer}
+/* 익스하위버전에서 이미지 선없애기 */
+fieldset,img {border: 0; vertical-align: top}
+/* 리스트 기호 빼기 */
+ol,ul {list-style: none}
+/* 태그 기본 기울임꼴 제거 */
+address,em {font-style: normal}
+/* 페이지안에서 가장 많은 링크색 지정 */
+/* a태그컬러는 디자인시안상에 가장많은 컬러로 변경해야함 */
+a {text-decoration: none; color: #000;}
+/* iframe으로 외부컨텐츠를 연결했을때
+외부컨텐츠안쪽내용이 우리페이지에 영향을 주지못하도록 가려줌
+*/
+iframe {overflow: hidden; border: 0}
+/* 칸의 선을 합치기, 칸의 간격없애기, 가로를 늘려줌 */
+table {border-collapse: collapse; border-spacing: 0; width: 100%}
+/* 굵기 빼고 헤딩태그 폰트크기를 body에 선언한 크기와 일치시킴 */
+h1,h2,h3,h4,h5,h6 {font-weight: normal; font-size: 100%}
+/* 폼요소의 높이가 다를때 요소끼리 세로정렬시킴 */
+input,select,textarea,button {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    /* 모바일 탭컬러 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+    /* ios에서 폼요소에 선이 있을경우 그림자생성 방지 */
+    -webkit-appearance:none;
+    appearance: none;
+}
+
+
+/* textarea 리사이즈기능 빼기 */
+textarea {resize: none}
+
+/* 페이지안의 모든 폰트의 줄간격을 1.5로 통일시킴
+모바일 크롬, 모바일 사 파리 브라우져의 텍스트 자동확대 방지
+*/
+body {line-height: 1.5; -webkit-text-size-adjust:none}
+
+
+/************** 공통스타일 *************/
+body,input,button,select,textarea,table {
+    font-family: 'Noto Sans KR','맑은 고딕','malgun gothic',sans-serif;
+    font-size: 16px;
+    color:#000;
+    letter-spacing: -0.03em;
+    /* 영문을 한글자씩 내려가게 */
+    word-break: break-all;
+}
+
+/* 스킵네비게이션 */
+#skipNav_wrap {position: relative;}
+#skipNav_wrap a { position: absolute; left:0; top:-9999px; width:100%; line-height: 40px; text-align: center; background: #ddd; font-size: 14px; z-index: 99999;}
+#skipNav_wrap a:hover, #skipNavi a:active, #skipNavi a:focus {top:0; }
+
+/* 글자선택시 배경색,글자색 변경 */
+/* ::-moz-selection {
+    background-color: #ef151e;
+    color: #ffffff
+}
+::selection {
+    background-color: #ef151e;
+    color: #ffffff;
+} */
+
+/* legend,caption,메뉴제목,섹션제목 블라인드
+legend(폼제목),caption(표제목)을 시각적으로 보이지않게처리
+*/
+legend,caption,.blind,input[type="checkbox"],input[type="radio"],input[type="file"] {position: absolute; overflow: hidden; clip: rect(0 0 0 0); margin: -1px; width: 1px; height: 1px;}
+
+/* overflow:hidden으로 float해제 못할경우 사용 */
+.clearfix:after {
+    content: '';
+    display: block;
+    clear:both;
+}
+
+/* ie10,ie11 input x버튼 가리기 */
+input[type="text"]::-ms-clear {
+    display: none;
+}
+/* ie10,ie11 input password 아이콘 가리기 */
+input[type="password"]::-ms-reveal {
+    display: none;
+}
+
+/* 익스 화살표빼기 */
+select::-ms-expand {
+    display: none;
+}
+
+
+/* ease */
+.easeOutExpo {
+	-webkit-transition-timing-function:cubic-bezier(0.190, 1.000, 0.220, 1.000) !important; 
+	-moz-transition-timing-function:cubic-bezier(0.190, 1.000, 0.220, 1.000) !important; 
+	-o-transition-timing-function:cubic-bezier(0.190, 1.000, 0.220, 1.000) !important; 
+	transition-timing-function:cubic-bezier(0.190, 1.000, 0.220, 1.000) !important; /* easeOutExpo */
+}
+
+/* 최소단말사이즈로 지정 */
+#wrap {min-width: 320px; min-height:2500px; position: relative;}
+
+/* 본문 */
+
+
+
+

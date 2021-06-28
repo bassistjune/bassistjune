@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* XEICON 아이콘 폰트 */
+@font-face {
+    font-family: 'Xei';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../font/xeicon/xeicon.eot);
+    src: url(../font/xeicon/xeicon.eot?#iefix) format('embedded-opentype'),
+         url(../font/xeicon/xeicon.woff) format('woff'),
+         url(../font/xeicon/xeicon.ttf) format('truetype');
+}
+
+i {display: block; font-family: 'Xei'; font-size: 22px; color: #000; font-style: unset; }
