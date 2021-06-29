@@ -21,8 +21,6 @@
         <!-- 웹폰트, 라이브러리 링크등 -->
         <link rel="stylesheet" type="text/css" href="font/font_style.css">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Noto+Serif+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <!-- 스와이퍼 슬라이드 -->
         <link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
@@ -73,8 +71,8 @@
                         <a href="#"><span></span></a>
                         <div class="mobile_menu_wrap">
                             <ul class="mobile_menu_list">
-                                <li><a href="#">Portfolio</a></li>
                                 <li><a href="#">About</a></li>
+                                <li><a href="#">Portfolio</a></li>
                                 <li><a href="#">Contact</a></li>
                             </ul>
                             <ul class="mobile_sns">
@@ -118,21 +116,22 @@
                                 <div class="skill_contents">
                                     <span></span>
                                     <h3>원활한 소통</h3>
-                                    <p>업무 순환의 가장 중요한 요소중 하나는 바로 소통이라고 생각합니다.<br>요청사항, 제작의도등을 잘 듣고, 전하여 업무를 하겠습니다.</p>
+                                    <p><!--업무 순환의 가장 중요한 요소 중 하나는 바로 소통입니다.<br>-->소통을 주로 했던 직종 경험을 바탕으로<br> 더 원활하게 업무를 할 수 있도록<br> 노력하겠습니다.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="skill_contents">
                                     <span></span>
                                     <h3>흡수하는 자세</h3>
-                                    <p>연습량을 바탕의 자신감 + 배우려는 겸손함으로 임하겠습니다.</p>
+                                    <p>협업하는 여러 사람들의 작업 스타일을 참조, 장점들을 잘 흡수하여 저만의 작업 방식을 다지겠습니다.</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="skill_contents">
                                     <span></span>
                                     <h3>맥락적 업무</h3>
-                                    <p>수시로 기술이 발생, 사라지는 퍼블리셔 업계에서 고정적 사고가 아닌, 맥락에 맞추어 사고와 태도를 갖추도록 하겠습니다.</p>
+                                    <p>빠르게 변화하는 IT업계에서 고정적 사고가 아닌, <!--클라이언트의 요청에 따른--> 적절한 마크업 기술을 사용 하겠습니다.
+                                    </p>
                                 </div>
                             </li>
                         </ul>
@@ -216,7 +215,7 @@
                                             </p>
                                             <div class="button_wrap">
                                                 <span class="date_num">Date | 2021.03.01</span>
-                                                <button class="btn_type_2" type="button">사이트 방문하기</button>
+                                                <a class="btn_type_2" href="http://bassistjune.github.io/audi_korea" target="_blank">사이트 방문하기</a>
                                                 <div class="link_notice">
                                                     <div class="link_top_inner">
                                                         <h4>Notice</h4>
@@ -242,7 +241,7 @@
                                             <p>기존과 차별되면서도 기존 캐릭터를 유지하는 작업을 하였습니다.</p>
                                             <div class="button_wrap">
                                                 <span class="date_num">Date | 2021.03.01</span>
-                                                <button class="btn_type_2" type="button">사이트 방문하기</button>
+                                                <button class="btn_type_2 btn_type_2_notice" type="button">사이트 방문하기</button>
                                                 <div class="link_notice">
                                                     <div class="link_top_inner">
                                                         <h4>Notice</h4>
@@ -268,7 +267,7 @@
                                             <p>기존 사이트(고정형)의 플랫폼을 기반으로 반응형을 적용하였습니다.</p>
                                             <div class="button_wrap">
                                                 <span class="date_num">Date | 2021.03.01</span>
-                                                <button class="btn_type_2" type="button">사이트 방문하기</button>
+                                                <button class="btn_type_2 btn_type_2_notice" type="button">사이트 방문하기</button>
                                                 <div class="link_notice">
                                                     <div class="link_top_inner">
                                                         <h4>Notice</h4>
@@ -316,12 +315,17 @@
                                 <button type="button" class="btn_email btn_type_1" value="bassistjune@gmail.com">Bassistjune@gmail.com</button>
                                 <ul class="send_mail_wrap">
                                     <li class="send_mail"><a href="mailto:bassistjune@gmail.com" title="메일 보내기"><i class="mail_icon"></i>메일 전송하기</a></li>
-                                    <li class="copy_mail"><a href="#"><i class="mail_icon"></i>메일 복사하기<input type="text" class="clipboard" value="bassistjune@gmail.com"></a></li>
+                                    <li class="copy_mail">
+                                        <a href="#">
+                                            <i class="mail_icon"></i>메일 복사하기
+                                            <input type="text" class="clipboard" value="bassistjune@gmail.com">
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
                             <li>
                                 <label class="profile_txt" for="profile"><i class="ico_profile"></i>이력서 다운받기</label>
-                                <input id="profile" type="file" href="#"></input>
+                                <input id="profile" type="file"></input>
                             </li>
                         </ul>
                     </div>
