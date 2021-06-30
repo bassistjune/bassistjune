@@ -152,7 +152,7 @@
 #container .intro_slider_wrap .slide_content .slide_txt .date_num {display: block; font-size: 16px; color: #ccc; padding-bottom: 20px;}
 
 /* 인트로 슬라이드 페이지네이션 */
-#container .intro_slider_wrap .slider_tools {width: 107px; height: 110px; position: absolute; right: 140px; bottom: 8px;}
+#container .intro_slider_wrap .slider_tools {width: 107px; height: 110px; position: absolute; right: 30px; bottom: 8px;}
 #container .intro_slider_wrap .slider_tools .swiper-pagination {position: absolute; top: 0px; left: 25px; pointer-events: none; font-size: 18px; font-weight: 300;}
 #container .intro_slider_wrap .slider_tools .swiper_arrow {bottom: 0; filter: brightness(0); width: 44px; height: 44px; border: 1px solid #000; background-size: 7px auto; padding: 8px 15px;}
 /* #container .intro_slider_wrap .slider_tools .swiper_arrow.swiper-button-prev {right: 68px;} */
