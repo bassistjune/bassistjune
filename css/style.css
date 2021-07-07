@@ -246,7 +246,7 @@
 
 /* 푸터 */
 #footer {border-top: 1px solid #E6E8E9; text-align: center;}
-#footer .footer_inner {height: 60px; line-height: 60px;}
+#footer .footer_inner {height: 60px; line-height: 60px; font-family: 'Noto Sans KR'}
 /* //푸터 */
 
 /* 딤 */
@@ -316,6 +316,7 @@
 
     .calling_card {width: 320px;}
 
+    #footer .footer_inner {height: 40px; line-height: 40px; font-size: 14px;}
 
 }
 
