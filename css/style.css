@@ -35,7 +35,7 @@
 .calling_card .profile_list li {padding: 4px 0; }
 /* 레이아웃 */
 .inner_1200 {margin: 0 auto; width: 1200px;}
-.vision .section_tit {font-size: 48px; font-weight: 700; text-align: center; }
+.vision .section_tit { text-align: center; }
 .section_tit {font-size: 48px; font-weight: 700; margin-bottom: 80px; padding-bottom: 80px; }
 
 /* 탑버튼 */
@@ -133,12 +133,12 @@
 #container .intro .intro_text .sub_tit {font-size: 26px; line-height: 1.25; padding-top: 40px; font-weight: 500;}
 #container .intro .intro_text .main_text {font-size: 21px; line-height: 1.5; font-weight: 500; padding-top: 40px;}
 
-.profile_txt {font-size: 18px; color: #f5c15d; vertical-align: middle; position: relative; padding: 24px 32px;/*  border: 1px solid #f5c15d; */}
+.profile_txt {font-size: 18px; color: #f5c15d; vertical-align: middle; position: relative; padding: 24px 32px;}
 .profile_txt:after {content: ''; position: absolute; left: 1%; bottom: 0px; display: block; width: 100%; height: 2px; background:#f5c15d; transform: scale(0); transition: 0.3s;}
 .profile_txt:hover:after {transform: scale(1); transition: 0.3s;}
 
 /* 인트로_슬라이더 */
-#container .intro_slider_wrap {/* height: 620px; *//* padding-top: 100px; */ position: relative;}
+#container .intro_slider_wrap {position: relative;}
 #container .intro_slider_wrap .intro_slider {/* height: 800px;  */ background: #f4f9fa;}
 #container .intro_slider_wrap .intro_slider .swiper-slide {/*  height: calc( 100% - 50px );  */overflow :hidden;}
 #container .intro_slider_wrap .intro_slider .swiper-slide img {display: block; width: 100%; transition: all 0.3s ease;}
@@ -155,7 +155,6 @@
 #container .intro_slider_wrap .slider_tools {width: 107px; height: 110px; position: absolute; right: 30px; bottom: 8px;}
 #container .intro_slider_wrap .slider_tools .swiper-pagination {position: absolute; top: 0px; left: 25px; pointer-events: none; font-size: 18px; font-weight: 300;}
 #container .intro_slider_wrap .slider_tools .swiper_arrow {bottom: 0; filter: brightness(0); width: 44px; height: 44px; border: 1px solid #000; background-size: 7px auto; padding: 8px 15px;}
-/* #container .intro_slider_wrap .slider_tools .swiper_arrow.swiper-button-prev {right: 68px;} */
 
 /* //인트로 */
 
@@ -215,13 +214,13 @@
 
 /* 포트폴리오 */
 #container .portfolio {padding-left: 0; padding-right: 0; padding-bottom: 0;}
-/* #container .portfolio .section_tit {padding-bottom: 80px;} */
+
 /* //포트폴리오 */
 
 
 /* 컨택 */
-#container .contact {/* height: 1000px;  */text-align: center; /* background: url(../images/coding_img.jpeg)50% 100% no-repeat; background-size: 68% auto; */ padding-bottom: 200px;}
-/* .contact .section_tit {padding-bottom: 80px;} */
+#container .contact {text-align: center; padding-bottom: 200px;}
+
 .contact .guide_contents { display: inline-block; width: 400px; margin-right: 40px; text-align: left; vertical-align: 320px;}
 .contact .contact_icon {display: inline-block; font-size: 18px; margin-right: 12px;}
 .contact .profile_list li {white-space: nowrap;}
@@ -236,7 +235,7 @@
 
 .send_mail_wrap li {font-size: 18px; color: #000; display: block;}
 .send_mail_wrap li i {display: inline-block; color:#f5c15d; font-weight: 500; margin-right: 8px; vertical-align: middle;}
-.send_mail_wrap li a {display: block; white-space: nowrap; padding: 12px 110px 12px 12px;}
+.send_mail_wrap li a {display: block; white-space: nowrap; padding: 12px 110px 12px 12px; font-size: 16px;}
 .send_mail_wrap li a:hover {background: #fafafa;}
 .send_mail_wrap li:nth-child(2) {border-top: 1px solid #E6E8E9;}
 .copy_mail .clipboard {position: absolute; clip: rect(0 0 0 0); margin: -1px; /* width: 1px; height: 1px; */}
@@ -274,6 +273,12 @@
     #container .vision .introduce .introduce_cell dl dd {font-size: 16px; padding: 4px 0; line-height: 1.5;}
 
     #container .vision .detail h3 {font-size: 34px; padding-bottom: 40px;}
+
+    /* 버튼 */
+    .btn_type_1 {padding: 20px 28px; border: none; font-size: 17px;border-radius: 40px;}
+    .btn_type_2 {display: block; padding: 11px 30px; font-size: 17px;}
+
+    .send_mail_wrap li a { padding: 12px 100px 12px 12px;}
 }
 
 /* 분기점 4 */
@@ -327,6 +332,12 @@
 
     #footer .footer_inner {height: 40px; line-height: 40px; font-size: 14px;}
 
+
+    /* 버튼 */
+    .btn_type_1 {padding: 18px 26px; border: none; font-size: 16px;border-radius: 35px;}
+    .btn_type_2 { padding: 10px 28px; font-size: 16px;}
+
+    .send_mail_wrap li a { padding: 12px 80px 12px 12px;}
 }
 
 /* 분기점  */
@@ -350,14 +361,18 @@
     #container .vision .detail h3 {font-size: 28px; padding-bottom: 30px;}
 
     /* 호버효과 막기 */
-/*     .btn_type_1:hover {background: transparent;}
-    .btn_type_2:hover {background: transparent; color: #f5c15d;} */
+
     .btn_top>a:hover {transform: scale(1); transition: all 0.3s ease;}
-/*     .btn_top>a:hover:before {height: 2px; transition: all 0.3s ease;}
-    .btn_top>a:hover:after {height: 2px; transition: all 0.3s ease;} */
+
     #header .header_inner .header_logo:hover span:nth-child(2),#header .header_inner .header_logo:hover span:nth-child(4) {width: 0%; transition: all 0.2s;}
     #header .header_inner .header_logo:hover span:nth-child(3),#header .header_inner .header_logo:hover span:nth-child(5) {height: 0%; transition: all 0.4s;}
     .send_mail_wrap li a:hover {background: #fafafa;}
+
+    /* 버튼 */
+    .btn_type_1 {padding: 16px 24px; border: none; font-size: 16px;border-radius: 32px;}
+    .btn_type_2 {padding: 10px 26px; font-size: 16px;}
+
+    .send_mail_wrap li a {padding: 12px 70px 12px 12px;}
 }
 
 /* 분기점 */

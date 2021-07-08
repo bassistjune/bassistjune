@@ -14,7 +14,7 @@ $(function () {
 	$('#header .gnb_menu>li>a').on('click', function(e) {
 		e.preventDefault();/* 기본 기능 제거 */
 
-		/* $(this).parent().addClass('on').siblings().removeClass('on'); */
+	
 
 		var idx = $(this).parent().index();
 		var sectionEq = $contentWrap.eq(idx);
@@ -87,7 +87,7 @@ $(function () {
 			
 			if($(this).offset().top -5 <= $(window).scrollTop()) {
 
-				/* console.log(idx); */
+				
 				$menu.removeClass('on');
 				$menu.eq(idx).addClass('on');
 			} else if($(window).scrollTop() < $contentWrap.eq(0).offset().top) {
@@ -156,10 +156,7 @@ $(function () {
 			$('.detail_txt').slideUp();
 		}else if(!$('.link_notice').is(e.target)) {
 			$('.button_wrap .link_notice').hide();
-		}/* else if(!$('.mobile_menu_list li').parent().find('.mobile_menu_wrap').hasClass('on').is(e.target)) {
-			$('.mobile_menu_wrap').removeClass('on');
-		} */
-		/* 이것 수정요망*/
+		}
 	});
 
 
