@@ -122,10 +122,10 @@ $(function () {
 	});
 
 	$('.contact .button_wrap .btn_email').mouseover(function() {
-		$('.contact_contents .button_wrap li .send_mail_wrap').show();
+		$('.contact_contents .button_wrap li .send_mail_wrap').css('display','block');
 	});
 	$('.send_mail_wrap').mouseleave(function(){
-		$('.contact_contents .button_wrap li .send_mail_wrap').hide();
+		$('.contact_contents .button_wrap li .send_mail_wrap').css('display','none');
 	});
 
 	

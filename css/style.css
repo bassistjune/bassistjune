@@ -144,11 +144,11 @@
 #container .intro_slider_wrap .intro_slider .swiper-slide img {display: block; width: 100%; transition: all 0.3s ease;}
 #container .intro_slider_wrap .slide_content {display: table; width: 100%; position: relative; padding: 40px 0; overflow: hidden;}
 #container .intro_slider_wrap .slide_content .slide_img {display: table-cell; width: 50%; vertical-align: middle; padding: 0 40px;}
-#container .intro_slider_wrap .slide_content .slide_txt {display: table-cell; position: relative; width: 50%; vertical-align: top; padding: 0 40px;}
+#container .intro_slider_wrap .slide_content .slide_txt {display: table-cell; /* position: relative; */ width: 50%; vertical-align: middle; padding: 0 40px;}
 
 #container .intro_slider_wrap .slide_content .slide_txt h4 {font-size: 28px; font-weight: 500; }
 #container .intro_slider_wrap .slide_content .slide_txt p {font-size: 18px; margin-top: 20px; }
-#container .intro_slider_wrap .slide_content .slide_txt .button_wrap {position: absolute; left: 40px; bottom: 0; padding: 0; text-align: left;}
+#container .intro_slider_wrap .slide_content .slide_txt .button_wrap {position: absolute; left: 50%; bottom: 40px; padding: 0; text-align: left;}
 #container .intro_slider_wrap .slide_content .slide_txt .date_num {display: block; font-size: 16px; color: #ccc; padding-bottom: 20px;}
 
 /* 인트로 슬라이드 페이지네이션 */
@@ -167,7 +167,7 @@
 .img_face_mobile {display: none;}
 
 #container .vision .introduce {display: table; width: 100%;}
-#container .vision .introduce .introduce_cell {display: table-cell; width: 50%;}
+#container .vision .introduce .introduce_cell {display: table-cell; width: 50%;vertical-align: middle;}
 #container .vision .introduce .introduce_cell:nth-child(2) {text-align: right;}
 
 #container .vision .introduce .introduce_cell dl dt {font-size: 38px; margin: 40px 0 20px; }
@@ -195,7 +195,7 @@
 #container .skill {/*background: #f4f9fa;*/ padding-bottom: 110px; text-align: center; }
 
 #container .skill .skill_list {display: table;}
-#container .skill .skill_list>li {display: table-cell; width: 33.33%;}
+#container .skill .skill_list>li {display: table-cell; width: 33.33%; vertical-align: middle;}
 #container .skill .skill_list>li .skill_contents {padding: 30px 20px; position: relative;}
 #container .skill .skill_list>li:first-child .skill_contents {padding-left: 0;}
 #container .skill .skill_list>li:last-child .skill_contents {padding-right: 0;}
