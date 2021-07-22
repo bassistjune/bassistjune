@@ -148,7 +148,7 @@
 
 #container .intro_slider_wrap .slide_content .slide_txt h4 {font-size: 28px; font-weight: 500; }
 #container .intro_slider_wrap .slide_content .slide_txt p {font-size: 18px; margin-top: 20px; }
-#container .intro_slider_wrap .slide_content .slide_txt .button_wrap {position: absolute; left: 0; bottom: 0px; padding: 0; text-align: left;}
+#container .intro_slider_wrap .slide_content .slide_txt .button_wrap {position: absolute; left: 40px; bottom: 0px; padding: 0; text-align: left;}
 #container .intro_slider_wrap .slide_content .slide_txt .date_num {display: block; font-size: 16px; color: #ccc; padding-bottom: 20px;}
 
 /* 인트로 슬라이드 페이지네이션 */
