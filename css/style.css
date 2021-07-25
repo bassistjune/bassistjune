@@ -282,6 +282,9 @@
     .btn_type_2 {display: block; padding: 11px 30px; font-size: 17px;}
 
     .send_mail_wrap li a { padding: 12px 100px 12px 12px;}
+
+
+    #container .intro_slider_wrap .slide_content:after {content: ''; position: absolute; left: 30px; right: 30px; bottom: 80px; height: 1px; background: #f2f5f8;}
 }
 
 /* 분기점 4 */
@@ -325,9 +328,9 @@
     #container .vision .introduce .introduce_cell dl dd {font-size: 14px; padding: 4px 0; line-height: 1.5;}
 
     #container .intro_slider_wrap .slide_content .slide_img {display: block; width: 100%; padding: 0 0px;}
-    #container .intro_slider_wrap .slide_content .slide_txt {display: block; position: relative; width: 100%;  padding: 30px 40px;}
+    #container .intro_slider_wrap .slide_content .slide_txt {display: block; width: 100%;  padding: 30px 40px;}
     #container .intro_slider_wrap .slide_content .slide_txt h4 {font-size: 22px; font-weight: 500; white-space:nowrap; overflow: hidden;}
-    #container .intro_slider_wrap .slide_content .slide_txt .button_wrap {position: absolute; left: 40px; bottom: 0; padding: 0; text-align: left;}
+
     #container .intro_slider_wrap .slide_content .slide_txt .date_num {display: block; font-size: 13px; color: #ccc; padding-bottom: 20px;}
 
     .calling_card {width: 320px;}
