@@ -48,10 +48,12 @@ $(function () {
 
 	// 인트로 슬라이더
 	var swiper = new Swiper(".intro_slider", {
-        slidesPerView: 1,
+		
+        slidesPerView: 4,
         spaceBetween: 40,
+		freeMode: true,
+		loop: false,
 		centeredSlides: true,
-		loop: true,
 		/* effect: "fade", */
         pagination: {
 			el: ".swiper-pagination",
@@ -61,6 +63,10 @@ $(function () {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
 		},
+		breakpoints: { 
+			640: { slidesPerView: 1, spaceBetween: 20 }, 
+			1200: { slidesPerView: 2, spaceBetween: 40 } 
+		}
 	});
 
 	$('.swiper_arrow').on('click', function() {
