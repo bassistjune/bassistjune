@@ -102,16 +102,13 @@ $(function () {
 			} 
 		}); 
 		// 헤더 on 기능
-		if ( $( this ).scrollTop() > 10 ) {
-			$( '#header' ).addClass('on);
-		} else {
-			$( '#header' ).removeClass('on');
-		}
 		//탑 버튼 기능
 		if ( $( this ).scrollTop() > 200 ) {
 			$( '.btn_top' ).fadeIn();
+			$( '#header' ).addClass('on);
 		} else {
 			$( '.btn_top' ).fadeOut();
+			$( '#header' ).removeClass('on');
 		}
 	});
 
