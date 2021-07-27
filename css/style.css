@@ -68,7 +68,7 @@
 
 /* 헤더 GNB */
 #header .gnb_menu li {float: left; margin: 0 15px;}
-#header .gnb_menu li a {display: block; position: relative; font-size: 18px; font-weight: 500; line-height: 50px; padding: 0 10px; transition: all 0.3s;}
+#header .gnb_menu li a {display: block; position: relative; font-size: 18px; font-weight: 700; line-height: 50px; padding: 0 10px; transition: all 0.3s;}
 #header .gnb_menu li a:before {content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; height: 2px; background: #f5c15d; display: block; transform: scale(0); transition: all 0.3s;}
 
 /* GNB li 온 */
