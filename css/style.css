@@ -51,7 +51,9 @@
 
 
 /* 헤더 */
-#header {position: fixed; left: 0; right: 0; top: 0; background: #fff; border-bottom: 1px solid #E6E8E9; padding: 0 30px; z-index: 500;}
+#header {position: fixed; left: 0; right: 0; top: 0; background: transparent; border-bottom: 1px solid #E6E8E9; padding: 0 30px; z-index: 500;}
+#header.on {background: #fff;}
+
 
 /* 헤더이너 */
 #header .header_inner {width: 100%; height: 50px; display: flex; align-items: center; justify-content: space-between;}
