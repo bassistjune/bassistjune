@@ -101,6 +101,7 @@ $(function () {
 				$menu.eq(idx).removeClass('on');
 			} 
 		}); 
+
 		//탑 버튼 기능
 		if ( $( this ).scrollTop() > 200 ) {
 			$( '.btn_top' ).fadeIn();
