@@ -3,8 +3,8 @@
 /* 공통 */
 
 /* 폰트효과 */
-.blue_txt {color: rgb(138, 165, 255); font-weigt: 700;}
-.red_txt {color: rgb(145, 53, 53); font-weigt: 700;}
+.blue_txt {color: rgb(138, 165, 255); font-weight: 700;}
+.red_txt {color: rgb(145, 53, 53); font-weight: 700;}
 
 /* 버튼 */
 .button_wrap {position: relative; padding: 60px 0 20px; text-align: center;}
